@@ -9,7 +9,13 @@ r = 7
 pi = 3.14
 
 squareArea = a*a
+squareArea2 = a**3 # ** to zapis potęgi / it is the notation of the power
 circumferenceCircle = 2*pi*r
 
-print('Pole kwadratu o boku długości 5 wynosi: ' + str(squareArea))
+print('Pole kwadratu o boku długości 5 wynosi: ', squareArea)
+print('Pole kwadratu o boku długości 5 wynosi: ', squareArea2)
 print('Obwód koła o promieniu 7 wynosi: ' + str(circumferenceCircle))
+
+>>>Pole kwadratu o boku długości 5 wynosi:  25
+>>>Pole kwadratu o boku długości 5 wynosi:  125
+>>>Obwód koła o promieniu 7 wynosi: 43.96
