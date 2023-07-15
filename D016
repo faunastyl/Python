@@ -1,0 +1,15 @@
+'''
+  Zadanie / Task
+    Oblicz pole kwadratu o boku długości 5 / Calculate the area of a square with a side length of 5
+    Oblicz obwód koła o promieniu 7 / Calculate the circumference of a circle with a radius of 7
+'''
+
+a = 5
+r = 7
+pi = 3.14
+
+squareArea = a*a
+circumferenceCircle = 2*pi*r
+
+print('Pole kwadratu o boku długości 5 wynosi: ' + str(squareArea))
+print('Obwód koła o promieniu 7 wynosi: ' + str(circumferenceCircle))
