@@ -1,0 +1,18 @@
+'''
+Zadanie:
+    Utwórz listę z pięcioma swoimi ulubionymi owocami.
+    Wypisz na ekranie drugi owoc z listy.
+    Zmień trzeci owoc na coś innego.
+    Wypisz na ekranie pierwszy i trzeci owoc z listy.
+'''
+
+fruit = ["plum", "apple", "gooseberry", "pear", "grape"]
+print(fruit)
+print(fruit[1]) 
+
+fruit[2] = "tomato"
+print(fruit[0], fruit[2])
+
+>>> ['plum', 'apple', 'gooseberry', 'pear', 'grape']
+>>> apple
+>>> plum tomato
