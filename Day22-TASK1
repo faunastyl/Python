@@ -1,0 +1,13 @@
+'''
+Napisz kod, który pyta użytkownika o wiek i sprawdza, czy jest on pełnoletni. 
+Jeśli tak, to program powinien wyświetlić "Jesteś pełnoletni!", w przeciwnym razie "Nie jesteś jeszcze pełnoletni.".
+(Pamiętaj, żeby wiek pobierać jako liczbę).
+'''
+
+age = input("Podaj swój wiek: ")
+ageNumber = int(age)
+adult = 18
+if ageNumber > adult:
+    print("Jesteś pełnoletni!")
+else:
+    print("Nie jesteś jeszcze pełnoletni.")
