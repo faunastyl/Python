@@ -3,3 +3,21 @@ Napisz kod, który pyta użytkownika o ocenę z testu (od 1 do 6) i sprawdza, cz
 Jeśli tak, to program powinien wyświetlić "Gratulacje, zdałeś!", w przeciwnym razie "Niestety, nie zdałeś.". 
 (Pamiętaj, żeby ocenę pobierać jako liczbę)
 '''
+
+ocena = input("Podaj swoją ocenę z testu: ")
+ocenaL = int(ocena)
+
+gratki = "Gratulacje, zdałeś!"
+buu = "Niestety, nie zdałeś."
+nie = "Podja prawidłową ocenę: "
+
+if ocenaL >= 4 and ocenaL <= 6:
+    print(gratki)
+elif ocenaL >= 1 and ocenaL <=3:
+    print(buu)
+else:
+    print = input(nie)
+    if ocenaL >= 4 and ocenaL <= 6:
+        print(gratki)
+    elif ocenaL >= 1 and ocenaL <=3:
+        print(buu)
