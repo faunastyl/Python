@@ -20,4 +20,3 @@ while True:
         break
     else:
         print(nie)
-
