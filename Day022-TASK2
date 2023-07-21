@@ -4,20 +4,20 @@ Jeśli tak, to program powinien wyświetlić "Gratulacje, zdałeś!", w przeciwn
 (Pamiętaj, żeby ocenę pobierać jako liczbę)
 '''
 
-ocena = input("Podaj swoją ocenę z testu: ")
-ocenaL = int(ocena)
-
 gratki = "Gratulacje, zdałeś!"
 buu = "Niestety, nie zdałeś."
-nie = "Podja prawidłową ocenę: "
+nie = "Podaj prawidłową ocenę (od 1 do 6): "
 
-if ocenaL >= 4 and ocenaL <= 6:
-    print(gratki)
-elif ocenaL >= 1 and ocenaL <=3:
-    print(buu)
-else:
-    print = input(nie)
+while True:
+    ocena = input("Podaj swoją ocenę z testu: ")
+    ocenaL = int(ocena)
+
     if ocenaL >= 4 and ocenaL <= 6:
         print(gratki)
-    elif ocenaL >= 1 and ocenaL <=3:
+        break
+    elif ocenaL >= 1 and ocenaL <= 3:
         print(buu)
+        break
+    else:
+        print(nie)
+
