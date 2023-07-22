@@ -1,22 +1,29 @@
 '''
-Napisz kod, który pyta użytkownika o ocenę z testu (od 1 do 6) i sprawdza, czy jest ona powyżej lub równa 4.
-Jeśli tak, to program powinien wyświetlić "Gratulacje, zdałeś!", w przeciwnym razie "Niestety, nie zdałeś.". 
+Napisz kod, który pyta użytkownika o ocenę z testu (od 1 do 6) i sprawdza,
+czy jest ona powyżej lub równa 4. Jeśli tak, to program powinien wyświetlić
+"Gratulacje, zdałeś!", w przeciwnym razie "Niestety, nie zdałeś.".
 (Pamiętaj, żeby ocenę pobierać jako liczbę)
 '''
 
 gratki = "Gratulacje, zdałeś!"
 buu = "Niestety, nie zdałeś."
 nie = "Podaj prawidłową ocenę (od 1 do 6): "
+o = "Nie podano żadnej oceny."
 
-while True:
+for i in range(1, 7):
     ocena = input("Podaj swoją ocenę z testu: ")
-    ocenaL = int(ocena)
-
-    if ocenaL >= 4 and ocenaL <= 6:
-        print(gratki)
-        break
-    elif ocenaL >= 1 and ocenaL <= 3:
-        print(buu)
-        break
+    
+    if not ocena == "":
+        ocenaL = int(ocena)
+    
+        if ocenaL >= 4 and ocenaL <= 6:
+            print(gratki)
+            break
+        elif ocenaL >= 1 and ocenaL <= 3:
+            print(buu)
+            break
+        else:
+            print(nie)
     else:
-        print(nie)
+        print(o)
+        
