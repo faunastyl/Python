@@ -1,0 +1,25 @@
+'''
+Napisz funkcję printavg(value), która wydrukuje komunikat: "Średnia wynosi: ",
+a następnie wyświetli wyliczoną wartość. / Write a function printavg(value) that prints the message: "Średnia wynosi: ",
+and then displays the calculated valu
+
+'''
+
+value1 = [1,2,3,4,5,6]
+value2 = [10,20,30]
+value3 = [10,10,10]
+
+def printavg(value):
+    total = sum(value)
+    count = len(value)
+    avg = total/count
+    return avg
+    
+print("Średnia wynosi: ", str(printavg(value1)))
+print("Średnia wynosi: ", str(printavg(value2)))
+print("Średnia wynosi: ", str(printavg(value3)))
+
+>>>
+Średnia wynosi:  3.5
+Średnia wynosi:  20.0
+Średnia wynosi:  10.0
