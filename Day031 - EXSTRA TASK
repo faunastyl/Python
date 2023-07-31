@@ -1,0 +1,21 @@
+'''
+Napisz własną funkcję maximum(), która znajduje największą liczbę, nie używając gotowej komendy max()
+/ Write your own maximum() function that finds the largest number, not using the ready-made max() command
+'''
+numbers = [1,3,6,12,1,23,43,12,11]
+
+maks = numbers[0]
+mini = numbers[0]
+
+for i in numbers:
+    if i > maks:
+        maks = i
+    if i < mini:
+        mini = i
+        
+print("Największa liczba to: ", maks)
+print("Najmniejsza liczba to: ", mini)
+
+>>>
+Największa liczba to:  43
+Najmniejsza liczba to:  1
