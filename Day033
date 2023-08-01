@@ -1,0 +1,12 @@
+'''
+Wymyśl (bazując na obecnej wiedzy) zadanie programistyczne i rozwiąż je. /
+Invent (based on existing knowledge) a programming task and solve it.
+'''
+
+"""
+Poproś ucznia o podanie ocen z wybranych przedmiotów na pierwsze i drugie półrocze.
+Oblicz średnią ocen półrocznych i na zakonczenie roku. Podaj je uczniowi. /
+Ask the student to submit their grades in the selected subjects for the first and second semesters.
+Calculate the average of the half-year and end-of-year marks. Give these to the student.
+"""
+
