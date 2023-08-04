@@ -10,3 +10,17 @@ Ask the student to submit their grades in the selected subjects for the first an
 Calculate the average of the half-year and end-of-year marks. Give these to the student.
 """
 
+tab = ['matematyka', 'fizyka', 'chemia', 'biologia', 'angielski']
+oceny_sem1 = []
+oceny_sem2 = []
+
+# Obliczenia dla semestru pierwszego
+print("Podaj oceny za pierwszy semestr:")
+for przedmiot in tab:
+    ocena_sem1 = input("Podaj ocenę: " + przedmiot + " ")
+    oceny_sem1.append(ocena_sem1)
+    
+print("\nOcena z przedmiotu:  ")
+for i in range(len(tab)):
+    print(tab[i], oceny_sem1[i])
+
