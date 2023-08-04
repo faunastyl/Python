@@ -24,3 +24,12 @@ print("\nOcena z przedmiotu:  ")
 for i in range(len(tab)):
     print(tab[i], oceny_sem1[i])
 
+# Obliczenia dla semestru pierwszego
+print("Podaj oceny za pierwszy semestr:")
+for przedmiot in tab:
+    ocena_sem1 = input(przedmiot + " ")
+    oceny_sem1.append(ocena_sem1)
+    
+sem_1 = oceny_sem1
+print(sem_1)
+
