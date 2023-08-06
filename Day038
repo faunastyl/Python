@@ -1,0 +1,23 @@
+Zsumuj liczby parzyste (i oczywiście wydrukuj rezultat) / Add up the even numbers (and print the result, of course)
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+parzyste = []
+
+for liczba in numbers:
+    if liczba%2 == 0:
+        print(liczba)
+        parzyste.append(liczba)
+print(parzyste)
+suma = sum(parzyste)
+print(suma)
+
+>>>
+2
+4
+6
+8
+10
+12
+14
+[2, 4, 6, 8, 10, 12, 14]
+56
