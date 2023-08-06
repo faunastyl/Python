@@ -20,6 +20,14 @@ zadanie = ["1 - Zadanie A", "2 - Zadanie B", "3 - Zadanie C", "4 - Zadanie D", "
 for z in range(len(tydzien)):
     for i in range(len(zadanie)):
         print(f"{tydzien[z]} {zadanie[i]}")
+
+#poprawiony kod/ refractoring
+zadanie = ["1 - Zadanie A", "2 - Zadanie B", "3 - Zadanie C", "4 - Zadanie D", "5 - Zadanie E"]
+
+for z in range(0, 22):
+    for i in range(len(zadanie)):
+        print(f"{z} - {zadanie[i]}")
+
 >>>
 1 -  1 - Zadanie A
 1 -  2 - Zadanie B
