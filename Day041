@@ -1,0 +1,7 @@
+Masz napisać kalkulator :)
+
+    Poproś użytkownika o dwie liczby (najpierw jedną, potem drugą)
+    Poproś użytkownika o działanie, jakie ma być wykonane (+,-,/,*)
+    Wyświetl rezultat działania na ekranie :)
+    Wróć na początek.
+    Wpisanie exit powinno zakończyć działanie kalkulatora.
