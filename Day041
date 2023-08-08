@@ -5,3 +5,13 @@ Masz napisać kalkulator :)
     Wyświetl rezultat działania na ekranie :)
     Wróć na początek.
     Wpisanie exit powinno zakończyć działanie kalkulatora.
+
+
+num1 = float(input("Podaj pierwszą liczbę: " ))
+num2 = float(input("Podaj drugą liczbę: "))
+
+#a,b = (num1, num2)
+
+def sum(num1, num2):
+        return num1 + num2
+print(sum(int(num1), int(num2)))    
