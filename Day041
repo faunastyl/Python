@@ -1,3 +1,4 @@
+'''
 Masz napisać kalkulator :)
 
     Poproś użytkownika o dwie liczby (najpierw jedną, potem drugą)
@@ -5,13 +6,22 @@ Masz napisać kalkulator :)
     Wyświetl rezultat działania na ekranie :)
     Wróć na początek.
     Wpisanie exit powinno zakończyć działanie kalkulatora.
+'''
 
 
 num1 = float(input("Podaj pierwszą liczbę: " ))
 num2 = float(input("Podaj drugą liczbę: "))
-
-#a,b = (num1, num2)
+dz = input("Jakie ma być wykonane: +,-,*,/ ?)")
 
 def sum(num1, num2):
         return num1 + num2
-print(sum(int(num1), int(num2)))    
+print("wynikiem działania", num1, dz, num2, "jest:", sum(int(num1), int(num2)))
+
+def sub(num1, num2):
+        return num1 - num2
+
+def milti(num1, num2):
+        return num1 * num2
+        
+def divi(num1, num2):
+        return num1 / num2 
