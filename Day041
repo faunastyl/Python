@@ -11,17 +11,49 @@ Masz napisać kalkulator :)
 
 num1 = float(input("Podaj pierwszą liczbę: " ))
 num2 = float(input("Podaj drugą liczbę: "))
-dz = input("Jakie ma być wykonane: +,-,*,/ ?)")
+dz = input("Jakie ma być wykonane działanie (+,-,*,/)?\nJeśli nie chcesz skorzystać z naszych usług, wpisz exit:\n")
+    
 
-def sum(num1, num2):
-        return num1 + num2
-print("wynikiem działania", num1, dz, num2, "jest:", sum(int(num1), int(num2)))
+def suma(num1, num2):
+    return num1 + num2
 
 def sub(num1, num2):
-        return num1 - num2
+    return num1 - num2
 
-def milti(num1, num2):
-        return num1 * num2
+def multi(num1, num2):
+    return num1 * num2
         
 def divi(num1, num2):
-        return num1 / num2 
+#    if num2 == 0:
+#        print("Sorry, nie dzielimy przez 0.")
+#        return None
+    return num1 / num2
+    
+if dz == "exit":
+    print("Dziękujemy, do widzenia! Dziękujemy, do widzenia!")
+    
+while True:
+    if dz == "+":
+        wynik = suma(float(num1), float(num2))
+        
+    elif dz == "-":
+        wynik = sub(float(num1), float(num2))
+        
+    elif dz == "*":
+        wynik = multi(float(num1), float(num2))
+        
+    elif dz == "/":
+        if num2 == 0:
+            print("Sorry, nie dzielimy przez 0.")
+            break
+        wynik = divi(float(num1), float(num2))
+        
+#    elif dz == "exit":
+#        print("Dziękujemy, do widzenia! Dziękujemy, do widzenia!")
+    
+    else:
+        print("Nieprawidłowe działanie. Spróbuj ponownie.")
+    break
+    
+print("Wynik", wynik)    
+    
