@@ -8,12 +8,10 @@ Masz napisać kalkulator :)
     Wpisanie exit powinno zakończyć działanie kalkulatora.
 '''
 
-
-num1 = float(input("Podaj pierwszą liczbę: " ))
-num2 = float(input("Podaj drugą liczbę: "))
-dz = input("Jakie ma być wykonane działanie (+,-,*,/)?\nJeśli nie chcesz skorzystać z naszych usług, wpisz exit:\n")
+#num1 = float(input("Podaj pierwszą liczbę: " ))
+#num2 = float(input("Podaj drugą liczbę: "))
+#dz = input("Jakie ma być wykonane działanie (+,-,*,/)?\nJeśli nie chcesz skorzystać z naszych usług, wpisz exit:\n")
     
-
 def suma(num1, num2):
     return num1 + num2
 
@@ -24,15 +22,23 @@ def multi(num1, num2):
     return num1 * num2
         
 def divi(num1, num2):
-#    if num2 == 0:
-#        print("Sorry, nie dzielimy przez 0.")
-#        return None
+    if num2 == 0:
+        print("Sorry, nie dzielimy przez 0.")
+        return None
     return num1 / num2
     
-if dz == "exit":
-    print("Dziękujemy, do widzenia! Dziękujemy, do widzenia!")
+#if dz == "exit":
+#    print("Dziękujemy, do widzenia! Dziękujemy, do widzenia!")
     
 while True:
+    num1 = input("Jestem prostym liczydłem.\nJeśli nie chcesz skorzystać z moich usług, wpisz exit:\nJeśli chcesz, to podaj pierwszą liczbę: " )
+    if str(num1) == "exit":
+        print("Dziękujemy, do widzenia!")
+        break
+        
+    num2 = input("Podaj drugą liczbę: ")
+    dz = input("Jakie ma być wykonane działanie (+,-,*,/)?\n")
+    
     if dz == "+":
         wynik = suma(float(num1), float(num2))
         
@@ -43,17 +49,12 @@ while True:
         wynik = multi(float(num1), float(num2))
         
     elif dz == "/":
-        if num2 == 0:
-            print("Sorry, nie dzielimy przez 0.")
-            break
+#        if num2 == 0:
+#            print("Sorry, nie dzielimy przez 0.")
+#            continue
         wynik = divi(float(num1), float(num2))
-        
-#    elif dz == "exit":
-#        print("Dziękujemy, do widzenia! Dziękujemy, do widzenia!")
-    
     else:
         print("Nieprawidłowe działanie. Spróbuj ponownie.")
-    break
+        continue
     
-print("Wynik", wynik)    
-    
+    print("Wynik", wynik)    
